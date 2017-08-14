@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ioctl_rs` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ioctl_rs">
+
+    <title>ioctl_rs - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate ioctl_rs</p><div class="block items"><ul><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'ioctl_rs', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>ioctl_rs</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/ioctl_rs/lib.rs.html#1-72' title='goto source code'>[src]</a></span></h1>
+<h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIOASYNC.html"
+                                  title='constant ioctl_rs::FIOASYNC'>FIOASYNC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIOCLEX.html"
+                                  title='constant ioctl_rs::FIOCLEX'>FIOCLEX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIOGETOWN.html"
+                                  title='constant ioctl_rs::FIOGETOWN'>FIOGETOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIONBIO.html"
+                                  title='constant ioctl_rs::FIONBIO'>FIONBIO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIONCLEX.html"
+                                  title='constant ioctl_rs::FIONCLEX'>FIONCLEX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIONREAD.html"
+                                  title='constant ioctl_rs::FIONREAD'>FIONREAD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FIOSETOWN.html"
+                                  title='constant ioctl_rs::FIOSETOWN'>FIOSETOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCADDMULTI.html"
+                                  title='constant ioctl_rs::SIOCADDMULTI'>SIOCADDMULTI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCADDRT.html"
+                                  title='constant ioctl_rs::SIOCADDRT'>SIOCADDRT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCDARP.html"
+                                  title='constant ioctl_rs::SIOCDARP'>SIOCDARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCDELMULTI.html"
+                                  title='constant ioctl_rs::SIOCDELMULTI'>SIOCDELMULTI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCDELRT.html"
+                                  title='constant ioctl_rs::SIOCDELRT'>SIOCDELRT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCDRARP.html"
+                                  title='constant ioctl_rs::SIOCDRARP'>SIOCDRARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGARP.html"
+                                  title='constant ioctl_rs::SIOCGARP'>SIOCGARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFADDR.html"
+                                  title='constant ioctl_rs::SIOCGIFADDR'>SIOCGIFADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFBRDADDR.html"
+                                  title='constant ioctl_rs::SIOCGIFBRDADDR'>SIOCGIFBRDADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFCONF.html"
+                                  title='constant ioctl_rs::SIOCGIFCONF'>SIOCGIFCONF</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFDSTADDR.html"
+                                  title='constant ioctl_rs::SIOCGIFDSTADDR'>SIOCGIFDSTADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFENCAP.html"
+                                  title='constant ioctl_rs::SIOCGIFENCAP'>SIOCGIFENCAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFFLAGS.html"
+                                  title='constant ioctl_rs::SIOCGIFFLAGS'>SIOCGIFFLAGS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFHWADDR.html"
+                                  title='constant ioctl_rs::SIOCGIFHWADDR'>SIOCGIFHWADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFMAP.html"
+                                  title='constant ioctl_rs::SIOCGIFMAP'>SIOCGIFMAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFMEM.html"
+                                  title='constant ioctl_rs::SIOCGIFMEM'>SIOCGIFMEM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFMETRIC.html"
+                                  title='constant ioctl_rs::SIOCGIFMETRIC'>SIOCGIFMETRIC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFMTU.html"
+                                  title='constant ioctl_rs::SIOCGIFMTU'>SIOCGIFMTU</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFNAME.html"
+                                  title='constant ioctl_rs::SIOCGIFNAME'>SIOCGIFNAME</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFNETMASK.html"
+                                  title='constant ioctl_rs::SIOCGIFNETMASK'>SIOCGIFNETMASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGIFSLAVE.html"
+                                  title='constant ioctl_rs::SIOCGIFSLAVE'>SIOCGIFSLAVE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGPGRP.html"
+                                  title='constant ioctl_rs::SIOCGPGRP'>SIOCGPGRP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGRARP.html"
+                                  title='constant ioctl_rs::SIOCGRARP'>SIOCGRARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCGSTAMP.html"
+                                  title='constant ioctl_rs::SIOCGSTAMP'>SIOCGSTAMP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSARP.html"
+                                  title='constant ioctl_rs::SIOCSARP'>SIOCSARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFADDR.html"
+                                  title='constant ioctl_rs::SIOCSIFADDR'>SIOCSIFADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFBRDADDR.html"
+                                  title='constant ioctl_rs::SIOCSIFBRDADDR'>SIOCSIFBRDADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFDSTADDR.html"
+                                  title='constant ioctl_rs::SIOCSIFDSTADDR'>SIOCSIFDSTADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFENCAP.html"
+                                  title='constant ioctl_rs::SIOCSIFENCAP'>SIOCSIFENCAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFFLAGS.html"
+                                  title='constant ioctl_rs::SIOCSIFFLAGS'>SIOCSIFFLAGS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFHWADDR.html"
+                                  title='constant ioctl_rs::SIOCSIFHWADDR'>SIOCSIFHWADDR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFLINK.html"
+                                  title='constant ioctl_rs::SIOCSIFLINK'>SIOCSIFLINK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFMAP.html"
+                                  title='constant ioctl_rs::SIOCSIFMAP'>SIOCSIFMAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFMEM.html"
+                                  title='constant ioctl_rs::SIOCSIFMEM'>SIOCSIFMEM</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFMETRIC.html"
+                                  title='constant ioctl_rs::SIOCSIFMETRIC'>SIOCSIFMETRIC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFMTU.html"
+                                  title='constant ioctl_rs::SIOCSIFMTU'>SIOCSIFMTU</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFNETMASK.html"
+                                  title='constant ioctl_rs::SIOCSIFNETMASK'>SIOCSIFNETMASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSIFSLAVE.html"
+                                  title='constant ioctl_rs::SIOCSIFSLAVE'>SIOCSIFSLAVE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSPGRP.html"
+                                  title='constant ioctl_rs::SIOCSPGRP'>SIOCSPGRP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIOCSRARP.html"
+                                  title='constant ioctl_rs::SIOCSRARP'>SIOCSRARP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCFLSH.html"
+                                  title='constant ioctl_rs::TCFLSH'>TCFLSH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCGETA.html"
+                                  title='constant ioctl_rs::TCGETA'>TCGETA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCGETS.html"
+                                  title='constant ioctl_rs::TCGETS'>TCGETS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSBRK.html"
+                                  title='constant ioctl_rs::TCSBRK'>TCSBRK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSBRKP.html"
+                                  title='constant ioctl_rs::TCSBRKP'>TCSBRKP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETA.html"
+                                  title='constant ioctl_rs::TCSETA'>TCSETA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETAF.html"
+                                  title='constant ioctl_rs::TCSETAF'>TCSETAF</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETAW.html"
+                                  title='constant ioctl_rs::TCSETAW'>TCSETAW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETS.html"
+                                  title='constant ioctl_rs::TCSETS'>TCSETS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETSF.html"
+                                  title='constant ioctl_rs::TCSETSF'>TCSETSF</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCSETSW.html"
+                                  title='constant ioctl_rs::TCSETSW'>TCSETSW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TCXONC.html"
+                                  title='constant ioctl_rs::TCXONC'>TCXONC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCCONS.html"
+                                  title='constant ioctl_rs::TIOCCONS'>TIOCCONS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCEXCL.html"
+                                  title='constant ioctl_rs::TIOCEXCL'>TIOCEXCL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGETD.html"
+                                  title='constant ioctl_rs::TIOCGETD'>TIOCGETD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGLCKTRMIOS.html"
+                                  title='constant ioctl_rs::TIOCGLCKTRMIOS'>TIOCGLCKTRMIOS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGPGRP.html"
+                                  title='constant ioctl_rs::TIOCGPGRP'>TIOCGPGRP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGSERIAL.html"
+                                  title='constant ioctl_rs::TIOCGSERIAL'>TIOCGSERIAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGSOFTCAR.html"
+                                  title='constant ioctl_rs::TIOCGSOFTCAR'>TIOCGSOFTCAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCGWINSZ.html"
+                                  title='constant ioctl_rs::TIOCGWINSZ'>TIOCGWINSZ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCINQ.html"
+                                  title='constant ioctl_rs::TIOCINQ'>TIOCINQ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCLINUX.html"
+                                  title='constant ioctl_rs::TIOCLINUX'>TIOCLINUX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCMBIC.html"
+                                  title='constant ioctl_rs::TIOCMBIC'>TIOCMBIC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCMBIS.html"
+                                  title='constant ioctl_rs::TIOCMBIS'>TIOCMBIS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCMGET.html"
+                                  title='constant ioctl_rs::TIOCMGET'>TIOCMGET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCMSET.html"
+                                  title='constant ioctl_rs::TIOCMSET'>TIOCMSET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_CAR.html"
+                                  title='constant ioctl_rs::TIOCM_CAR'>TIOCM_CAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_CD.html"
+                                  title='constant ioctl_rs::TIOCM_CD'>TIOCM_CD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_CTS.html"
+                                  title='constant ioctl_rs::TIOCM_CTS'>TIOCM_CTS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_DSR.html"
+                                  title='constant ioctl_rs::TIOCM_DSR'>TIOCM_DSR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_DTR.html"
+                                  title='constant ioctl_rs::TIOCM_DTR'>TIOCM_DTR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_LE.html"
+                                  title='constant ioctl_rs::TIOCM_LE'>TIOCM_LE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_RI.html"
+                                  title='constant ioctl_rs::TIOCM_RI'>TIOCM_RI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_RNG.html"
+                                  title='constant ioctl_rs::TIOCM_RNG'>TIOCM_RNG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_RTS.html"
+                                  title='constant ioctl_rs::TIOCM_RTS'>TIOCM_RTS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_SR.html"
+                                  title='constant ioctl_rs::TIOCM_SR'>TIOCM_SR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCM_ST.html"
+                                  title='constant ioctl_rs::TIOCM_ST'>TIOCM_ST</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCNOTTY.html"
+                                  title='constant ioctl_rs::TIOCNOTTY'>TIOCNOTTY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCNXCL.html"
+                                  title='constant ioctl_rs::TIOCNXCL'>TIOCNXCL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCOUTQ.html"
+                                  title='constant ioctl_rs::TIOCOUTQ'>TIOCOUTQ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCPKT.html"
+                                  title='constant ioctl_rs::TIOCPKT'>TIOCPKT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSCTTY.html"
+                                  title='constant ioctl_rs::TIOCSCTTY'>TIOCSCTTY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERCONFIG.html"
+                                  title='constant ioctl_rs::TIOCSERCONFIG'>TIOCSERCONFIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERGETLSR.html"
+                                  title='constant ioctl_rs::TIOCSERGETLSR'>TIOCSERGETLSR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERGETMULTI.html"
+                                  title='constant ioctl_rs::TIOCSERGETMULTI'>TIOCSERGETMULTI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERGSTRUCT.html"
+                                  title='constant ioctl_rs::TIOCSERGSTRUCT'>TIOCSERGSTRUCT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERGWILD.html"
+                                  title='constant ioctl_rs::TIOCSERGWILD'>TIOCSERGWILD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERSETMULTI.html"
+                                  title='constant ioctl_rs::TIOCSERSETMULTI'>TIOCSERSETMULTI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSERSWILD.html"
+                                  title='constant ioctl_rs::TIOCSERSWILD'>TIOCSERSWILD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSETD.html"
+                                  title='constant ioctl_rs::TIOCSETD'>TIOCSETD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSLCKTRMIOS.html"
+                                  title='constant ioctl_rs::TIOCSLCKTRMIOS'>TIOCSLCKTRMIOS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSPGRP.html"
+                                  title='constant ioctl_rs::TIOCSPGRP'>TIOCSPGRP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSSERIAL.html"
+                                  title='constant ioctl_rs::TIOCSSERIAL'>TIOCSSERIAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSSOFTCAR.html"
+                                  title='constant ioctl_rs::TIOCSSOFTCAR'>TIOCSSOFTCAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSTI.html"
+                                  title='constant ioctl_rs::TIOCSTI'>TIOCSTI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIOCSWINSZ.html"
+                                  title='constant ioctl_rs::TIOCSWINSZ'>TIOCSWINSZ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.ioctl.html"
+                                  title='fn ioctl_rs::ioctl'>ioctl</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocexcl.html"
+                                  title='fn ioctl_rs::tiocexcl'>tiocexcl</a></td>
+                           <td class='docblock-short'>
+                                <p>Put the terminal in exclusive mode.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocmbic.html"
+                                  title='fn ioctl_rs::tiocmbic'>tiocmbic</a></td>
+                           <td class='docblock-short'>
+                                <p>Clear the indicated modem bits.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocmbis.html"
+                                  title='fn ioctl_rs::tiocmbis'>tiocmbis</a></td>
+                           <td class='docblock-short'>
+                                <p>Set the indicated modem bits.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocmget.html"
+                                  title='fn ioctl_rs::tiocmget'>tiocmget</a></td>
+                           <td class='docblock-short'>
+                                <p>Get the status of modem bits.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocmset.html"
+                                  title='fn ioctl_rs::tiocmset'>tiocmset</a></td>
+                           <td class='docblock-short'>
+                                <p>Set the status of modem bits.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.tiocnxcl.html"
+                                  title='fn ioctl_rs::tiocnxcl'>tiocnxcl</a></td>
+                           <td class='docblock-short'>
+                                <p>Disable exclusive mode.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "ioctl_rs";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

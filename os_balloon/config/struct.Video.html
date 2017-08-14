@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Video` struct in crate `os_balloon`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Video">
+
+    <title>os_balloon::config::Video - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    <link rel="shortcut icon" href="https://openstratos.org/wp-content/uploads/2015/10/OpenStratos-mark.png">
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        <a href='../../os_balloon/index.html'><img src='https://openstratos.org/wp-content/uploads/2017/05/OpenStratos-768x226.png' alt='logo' width='100'></a>
+        <p class='location'>Struct Video</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>config</a></p><script>window.sidebarCurrent = {name: 'Video', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>config</a>::<wbr><a class="struct" href=''>Video</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/os_balloon/config.rs.html#405-432' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Video { /* fields omitted */ }</pre><div class='docblock'><p>Video configuration structure.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../../os_balloon/config/struct.Video.html" title="struct os_balloon::config::Video">Video</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/os_balloon/config.rs.html#435-500' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.height' class="method"><span id='height.v' class='invisible'><code>fn <a href='#method.height' class='fnname'>height</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code></span></h4>
+<div class='docblock'><p>Gets the configured video height for the camera, in pixels.</p>
+</div><h4 id='method.width' class="method"><span id='width.v' class='invisible'><code>fn <a href='#method.width' class='fnname'>width</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code></span></h4>
+<div class='docblock'><p>Gets the configured video width for the camera, in pixels.</p>
+</div><h4 id='method.fps' class="method"><span id='fps.v' class='invisible'><code>fn <a href='#method.fps' class='fnname'>fps</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code></span></h4>
+<div class='docblock'><p>Gets the configured video framerate for the camera, in frames per second.</p>
+</div><h4 id='method.bitrate' class="method"><span id='bitrate.v' class='invisible'><code>fn <a href='#method.bitrate' class='fnname'>bitrate</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span></h4>
+<div class='docblock'><p>Gets the configured bitrate for videos.</p>
+</div><h4 id='method.exposure' class="method"><span id='exposure.v' class='invisible'><code>fn <a href='#method.exposure' class='fnname'>exposure</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="enum" href="../../os_balloon/config/enum.Exposure.html" title="enum os_balloon::config::Exposure">Exposure</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured exposure for videos.</p>
+</div><h4 id='method.brightness' class="method"><span id='brightness.v' class='invisible'><code>fn <a href='#method.brightness' class='fnname'>brightness</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured brightness for videos.</p>
+</div><h4 id='method.contrast' class="method"><span id='contrast.v' class='invisible'><code>fn <a href='#method.contrast' class='fnname'>contrast</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i8.html">i8</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured contrast for videos.</p>
+</div><h4 id='method.sharpness' class="method"><span id='sharpness.v' class='invisible'><code>fn <a href='#method.sharpness' class='fnname'>sharpness</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i8.html">i8</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured sharpness for videos.</p>
+</div><h4 id='method.saturation' class="method"><span id='saturation.v' class='invisible'><code>fn <a href='#method.saturation' class='fnname'>saturation</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i8.html">i8</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured saturation for videos.</p>
+</div><h4 id='method.iso' class="method"><span id='iso.v' class='invisible'><code>fn <a href='#method.iso' class='fnname'>iso</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured ISO for videos.</p>
+</div><h4 id='method.stabilization' class="method"><span id='stabilization.v' class='invisible'><code>fn <a href='#method.stabilization' class='fnname'>stabilization</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Gets if video stabilization needs to be turned on.</p>
+</div><h4 id='method.ev' class="method"><span id='ev.v' class='invisible'><code>fn <a href='#method.ev' class='fnname'>ev</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i8.html">i8</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured EV compensation for videos.</p>
+</div><h4 id='method.white_balance' class="method"><span id='white_balance.v' class='invisible'><code>fn <a href='#method.white_balance' class='fnname'>white_balance</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="enum" href="../../os_balloon/config/enum.WhiteBalance.html" title="enum os_balloon::config::WhiteBalance">WhiteBalance</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the configured automatic white balance for videos.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../os_balloon/config/struct.Video.html" title="struct os_balloon::config::Video">Video</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/os_balloon/config.rs.html#404' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "os_balloon";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

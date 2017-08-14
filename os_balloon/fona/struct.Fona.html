@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Fona` struct in crate `os_balloon`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Fona">
+
+    <title>os_balloon::fona::Fona - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    <link rel="shortcut icon" href="https://openstratos.org/wp-content/uploads/2015/10/OpenStratos-mark.png">
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        <a href='../../os_balloon/index.html'><img src='https://openstratos.org/wp-content/uploads/2017/05/OpenStratos-768x226.png' alt='logo' width='100'></a>
+        <p class='location'>Struct Fona</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>fona</a></p><script>window.sidebarCurrent = {name: 'Fona', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>fona</a>::<wbr><a class="struct" href=''>Fona</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/os_balloon/fona.rs.html#25-27' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Fona { /* fields omitted */ }</pre><div class='docblock'><p>Adafruit FONA control structure.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../../os_balloon/fona/struct.Fona.html" title="struct os_balloon::fona::Fona">Fona</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/os_balloon/fona.rs.html#29-392' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.initialize' class="method"><span id='initialize.v' class='invisible'><code>fn <a href='#method.initialize' class='fnname'>initialize</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span></h4>
+<div class='docblock'><p>Initializes the Adafruit FONA module.</p>
+</div><h4 id='method.is_on' class="method"><span id='is_on.v' class='invisible'><code>fn <a href='#method.is_on' class='fnname'>is_on</a>(&amp;self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>&gt;</code></span></h4>
+<div class='docblock'><p>Checks if the FONA module is on.</p>
+</div><h4 id='method.turn_on' class="method"><span id='turn_on.v' class='invisible'><code>fn <a href='#method.turn_on' class='fnname'>turn_on</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span></h4>
+<div class='docblock'><p>Turns on the FONA module.</p>
+</div><h4 id='method.turn_off' class="method"><span id='turn_off.v' class='invisible'><code>fn <a href='#method.turn_off' class='fnname'>turn_off</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span></h4>
+<div class='docblock'><p>Tuns off the FONA module.</p>
+</div><h4 id='method.send_sms' class="method"><span id='send_sms.v' class='invisible'><code>fn <a href='#method.send_sms' class='fnname'>send_sms</a>&lt;M&gt;(&amp;mut self, message: M) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;M: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html" title="trait core::convert::AsRef">AsRef</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>&gt;,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>Sends an SMS with the given text to the given phone number.</p>
+</div><h4 id='method.get_location' class="method"><span id='get_location.v' class='invisible'><code>fn <a href='#method.get_location' class='fnname'>get_location</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="struct" href="../../os_balloon/fona/struct.Location.html" title="struct os_balloon::fona::Location">Location</a>&gt;</code></span></h4>
+<div class='docblock'><p>Gets the current location using GPRS.</p>
+</div><h4 id='method.battery_percent' class="method"><span id='battery_percent.v' class='invisible'><code>fn <a href='#method.battery_percent' class='fnname'>battery_percent</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;</code></span></h4>
+<div class='docblock'><p>Checks the FONA battery level, in percentage.</p>
+</div><h4 id='method.battery_voltage' class="method"><span id='battery_voltage.v' class='invisible'><code>fn <a href='#method.battery_voltage' class='fnname'>battery_voltage</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;</code></span></h4>
+<div class='docblock'><p>Checks the FONA battery level, in voltage.</p>
+</div><h4 id='method.adc_voltage' class="method"><span id='adc_voltage.v' class='invisible'><code>fn <a href='#method.adc_voltage' class='fnname'>adc_voltage</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;</code></span></h4>
+<div class='docblock'><p>Checks the ADC (Analog-Digital converter) voltage of the FONA.</p>
+</div><h4 id='method.has_connectivity' class="method"><span id='has_connectivity.v' class='invisible'><code>fn <a href='#method.has_connectivity' class='fnname'>has_connectivity</a>(&amp;mut self) -&gt; <a class="type" href="../../os_balloon/error/type.Result.html" title="type os_balloon::error::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>&gt;</code></span></h4>
+<div class='docblock'><p>Checks if the FONA module has GSM connectivity.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html" title="trait core::ops::Drop">Drop</a> for <a class="struct" href="../../os_balloon/fona/struct.Fona.html" title="struct os_balloon::fona::Fona">Fona</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/os_balloon/fona.rs.html#394-417' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.drop' class="method"><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span></h4>
+<div class='docblock'><p>A method called when the value goes out of scope. <a href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "os_balloon";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

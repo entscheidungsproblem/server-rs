@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["available_baud_rates",""],["available_ports",""]],"struct":[["TTYPort","A TTY-based serial port implementation."]]});

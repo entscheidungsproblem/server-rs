@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ErrorKind` enum in crate `os_balloon`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ErrorKind">
+
+    <title>os_balloon::error::ErrorKind - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    <link rel="shortcut icon" href="https://openstratos.org/wp-content/uploads/2015/10/OpenStratos-mark.png">
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        <a href='../../os_balloon/index.html'><img src='https://openstratos.org/wp-content/uploads/2017/05/OpenStratos-768x226.png' alt='logo' width='100'></a>
+        <p class='location'>Enum ErrorKind</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>error</a></p><script>window.sidebarCurrent = {name: 'ErrorKind', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>os_balloon</a>::<wbr><a href='index.html'>error</a>::<wbr><a class="enum" href=''>ErrorKind</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span></span></h1>
+<pre class='rust enum'>pub enum ErrorKind {
+    Msg(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>),
+    Io(<a class="struct" href="https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html" title="struct std::io::error::Error">Error</a>),
+    Toml(<a class="struct" href="../../toml/de/struct.Error.html" title="struct toml::de::Error">Error</a>),
+    Log(<a class="enum" href="../../log4rs/priv_file/enum.Error.html" title="enum log4rs::priv_file::Error">Error</a>),
+    LogSet(<a class="struct" href="../../log/struct.SetLoggerError.html" title="struct log::SetLoggerError">SetLoggerError</a>),
+    LogConfig(<a class="struct" href="../../log4rs/config/struct.Errors.html" title="struct log4rs::config::Errors">Errors</a>),
+    FromUTF8(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.FromUtf8Error.html" title="struct collections::string::FromUtf8Error">FromUtf8Error</a>),
+    NulError(<a class="struct" href="https://doc.rust-lang.org/nightly/std/ffi/c_str/struct.NulError.html" title="struct std::ffi::c_str::NulError">NulError</a>),
+    GPIO(<a class="enum" href="../../sysfs_gpio/error/enum.Error.html" title="enum sysfs_gpio::error::Error">Error</a>),
+    SerialPort(<a class="struct" href="../../serialport/struct.Error.html" title="struct serialport::Error">Error</a>),
+    GPSInvalidStatus(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>),
+    GPSInit,
+    GpsAlreadyInitialized,
+    ConfigOpen(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+    ConfigRead(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+    ConfigInvalidToml(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+    ConfigInvalid(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>),
+    DataFSInit,
+    LogAppender(&amp;'static <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>),
+    LogBuild,
+    DirectoryCreation(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+    LastStateRead,
+    LastStateFileOpen,
+    LastStateFileRead,
+    LastStateFileWrite,
+    InvalidState(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>),
+    Init,
+    FonaInit,
+    FonaNoEchoOff,
+    FonaInitNoPowerOn,
+    FonaNoSerial,
+    FonaSerialEnd,
+    FonaLongSms,
+    FonaSmsAtCmgd,
+    FonaSmsCmgs,
+    FonaSmsOk,
+    FonaSendCommandCrlf,
+    FonaPartialResponse(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>),
+    FonaCommand,
+    FonaCADCInvalidResponse,
+    CameraAlreadyRecording,
+    CameraFileExists(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+    CameraTest,
+    CameraTestRemove(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>),
+}</pre><div class='docblock'><p>The kind of an error.</p>
+</div><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.Msg' class='variant'><span id='Msg.v' class='invisible'><code>Msg(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>)</code></span></span><div class='docblock'><p>A convenient variant for String.</p>
+</div><span id='variant.Io' class='variant'><span id='Io.v' class='invisible'><code>Io(<a class="struct" href="https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html" title="struct std::io::error::Error">Error</a>)</code></span></span><div class='docblock'><p>Standard library I/O error.</p>
+</div><span id='variant.Toml' class='variant'><span id='Toml.v' class='invisible'><code>Toml(<a class="struct" href="../../toml/de/struct.Error.html" title="struct toml::de::Error">Error</a>)</code></span></span><div class='docblock'><p>TOML deserializing error.</p>
+</div><span id='variant.Log' class='variant'><span id='Log.v' class='invisible'><code>Log(<a class="enum" href="../../log4rs/priv_file/enum.Error.html" title="enum log4rs::priv_file::Error">Error</a>)</code></span></span><div class='docblock'><p>Log error.</p>
+</div><span id='variant.LogSet' class='variant'><span id='LogSet.v' class='invisible'><code>LogSet(<a class="struct" href="../../log/struct.SetLoggerError.html" title="struct log::SetLoggerError">SetLoggerError</a>)</code></span></span><div class='docblock'><p>Error setting up logger.</p>
+</div><span id='variant.LogConfig' class='variant'><span id='LogConfig.v' class='invisible'><code>LogConfig(<a class="struct" href="../../log4rs/config/struct.Errors.html" title="struct log4rs::config::Errors">Errors</a>)</code></span></span><div class='docblock'><p>Logger configuration error.</p>
+</div><span id='variant.FromUTF8' class='variant'><span id='FromUTF8.v' class='invisible'><code>FromUTF8(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.FromUtf8Error.html" title="struct collections::string::FromUtf8Error">FromUtf8Error</a>)</code></span></span><div class='docblock'><p>Error creating a String from UTF-8 data.</p>
+</div><span id='variant.NulError' class='variant'><span id='NulError.v' class='invisible'><code>NulError(<a class="struct" href="https://doc.rust-lang.org/nightly/std/ffi/c_str/struct.NulError.html" title="struct std::ffi::c_str::NulError">NulError</a>)</code></span></span><div class='docblock'><p>A nul byte was found in the vector provided.</p>
+</div><span id='variant.GPIO' class='variant'><span id='GPIO.v' class='invisible'><code>GPIO(<a class="enum" href="../../sysfs_gpio/error/enum.Error.html" title="enum sysfs_gpio::error::Error">Error</a>)</code></span></span><div class='docblock'><p>A GPIO library error.</p>
+</div><span id='variant.SerialPort' class='variant'><span id='SerialPort.v' class='invisible'><code>SerialPort(<a class="struct" href="../../serialport/struct.Error.html" title="struct serialport::Error">Error</a>)</code></span></span><div class='docblock'><p>Serial port error</p>
+</div><span id='variant.GPSInvalidStatus' class='variant'><span id='GPSInvalidStatus.v' class='invisible'><code>GPSInvalidStatus(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>)</code></span></span><div class='docblock'><p>Invalid GPS status.</p>
+</div><span id='variant.GPSInit' class='variant'><span id='GPSInit.v' class='invisible'><code>GPSInit</code></span></span><div class='docblock'><p>GPS initialization error.</p>
+</div><span id='variant.GpsAlreadyInitialized' class='variant'><span id='GpsAlreadyInitialized.v' class='invisible'><code>GpsAlreadyInitialized</code></span></span><div class='docblock'><p>GPS was already initialized when trying to initialize it.</p>
+</div><span id='variant.ConfigOpen' class='variant'><span id='ConfigOpen.v' class='invisible'><code>ConfigOpen(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Error opening configuration file.</p>
+</div><span id='variant.ConfigRead' class='variant'><span id='ConfigRead.v' class='invisible'><code>ConfigRead(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Error reading configuration file.</p>
+</div><span id='variant.ConfigInvalidToml' class='variant'><span id='ConfigInvalidToml.v' class='invisible'><code>ConfigInvalidToml(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Invalid TOML in configuration file.</p>
+</div><span id='variant.ConfigInvalid' class='variant'><span id='ConfigInvalid.v' class='invisible'><code>ConfigInvalid(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>)</code></span></span><div class='docblock'><p>Invalid configuration options.</p>
+</div><span id='variant.DataFSInit' class='variant'><span id='DataFSInit.v' class='invisible'><code>DataFSInit</code></span></span><div class='docblock'><p>Error initializing the <code>data</code> filesystem.</p>
+</div><span id='variant.LogAppender' class='variant'><span id='LogAppender.v' class='invisible'><code>LogAppender(&amp;'static <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code></span></span><div class='docblock'><p>Error creating a log appender.</p>
+</div><span id='variant.LogBuild' class='variant'><span id='LogBuild.v' class='invisible'><code>LogBuild</code></span></span><div class='docblock'><p>Error building the logger.</p>
+</div><span id='variant.DirectoryCreation' class='variant'><span id='DirectoryCreation.v' class='invisible'><code>DirectoryCreation(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Error creating a directory.</p>
+</div><span id='variant.LastStateRead' class='variant'><span id='LastStateRead.v' class='invisible'><code>LastStateRead</code></span></span><div class='docblock'><p>Error reading last state.</p>
+</div><span id='variant.LastStateFileOpen' class='variant'><span id='LastStateFileOpen.v' class='invisible'><code>LastStateFileOpen</code></span></span><div class='docblock'><p>Error opening last state file.</p>
+</div><span id='variant.LastStateFileRead' class='variant'><span id='LastStateFileRead.v' class='invisible'><code>LastStateFileRead</code></span></span><div class='docblock'><p>Error reading last state file.</p>
+</div><span id='variant.LastStateFileWrite' class='variant'><span id='LastStateFileWrite.v' class='invisible'><code>LastStateFileWrite</code></span></span><div class='docblock'><p>Error writing last state file.</p>
+</div><span id='variant.InvalidState' class='variant'><span id='InvalidState.v' class='invisible'><code>InvalidState(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>)</code></span></span><div class='docblock'><p>Invalid last state.</p>
+</div><span id='variant.Init' class='variant'><span id='Init.v' class='invisible'><code>Init</code></span></span><div class='docblock'><p>Initialization error.</p>
+</div><span id='variant.FonaInit' class='variant'><span id='FonaInit.v' class='invisible'><code>FonaInit</code></span></span><div class='docblock'><p>FONA initialization error.</p>
+</div><span id='variant.FonaNoEchoOff' class='variant'><span id='FonaNoEchoOff.v' class='invisible'><code>FonaNoEchoOff</code></span></span><div class='docblock'><p>Error turning FONA echo off.</p>
+</div><span id='variant.FonaInitNoPowerOn' class='variant'><span id='FonaInitNoPowerOn.v' class='invisible'><code>FonaInitNoPowerOn</code></span></span><div class='docblock'><p>FONA could not be turned on.</p>
+</div><span id='variant.FonaNoSerial' class='variant'><span id='FonaNoSerial.v' class='invisible'><code>FonaNoSerial</code></span></span><div class='docblock'><p>No FONA when trying to send command.</p>
+</div><span id='variant.FonaSerialEnd' class='variant'><span id='FonaSerialEnd.v' class='invisible'><code>FonaSerialEnd</code></span></span><div class='docblock'><p>FONA serial found EOF.</p>
+</div><span id='variant.FonaLongSms' class='variant'><span id='FonaLongSms.v' class='invisible'><code>FonaLongSms</code></span></span><div class='docblock'><p>SMS was too long to be sent.</p>
+</div><span id='variant.FonaSmsAtCmgd' class='variant'><span id='FonaSmsAtCmgd.v' class='invisible'><code>FonaSmsAtCmgd</code></span></span><div class='docblock'><p>Error sending SMS on &#39;AT+CMGD=1&#39; response.</p>
+</div><span id='variant.FonaSmsCmgs' class='variant'><span id='FonaSmsCmgs.v' class='invisible'><code>FonaSmsCmgs</code></span></span><div class='docblock'><p>Error reading +CMGS response.</p>
+</div><span id='variant.FonaSmsOk' class='variant'><span id='FonaSmsOk.v' class='invisible'><code>FonaSmsOk</code></span></span><div class='docblock'><p>No OK received after sending SMS.</p>
+</div><span id='variant.FonaSendCommandCrlf' class='variant'><span id='FonaSendCommandCrlf.v' class='invisible'><code>FonaSendCommandCrlf</code></span></span><div class='docblock'><p>Error reading CRLF (<em>\r\n</em>) after sendin command to FONA.</p>
+</div><span id='variant.FonaPartialResponse' class='variant'><span id='FonaPartialResponse.v' class='invisible'><code>FonaPartialResponse(<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>)</code></span></span><div class='docblock'><p>FONA serial found EOF.</p>
+</div><span id='variant.FonaCommand' class='variant'><span id='FonaCommand.v' class='invisible'><code>FonaCommand</code></span></span><div class='docblock'><p>Error sending command to FONA.</p>
+</div><span id='variant.FonaCADCInvalidResponse' class='variant'><span id='FonaCADCInvalidResponse.v' class='invisible'><code>FonaCADCInvalidResponse</code></span></span><div class='docblock'><p>Invalid response to AT+CADC? (read ADC) command.</p>
+</div><span id='variant.CameraAlreadyRecording' class='variant'><span id='CameraAlreadyRecording.v' class='invisible'><code>CameraAlreadyRecording</code></span></span><div class='docblock'><p>Camera was already recording.</p>
+</div><span id='variant.CameraFileExists' class='variant'><span id='CameraFileExists.v' class='invisible'><code>CameraFileExists(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Camera output file already exists.</p>
+</div><span id='variant.CameraTest' class='variant'><span id='CameraTest.v' class='invisible'><code>CameraTest</code></span></span><div class='docblock'><p>Camera testing error.</p>
+</div><span id='variant.CameraTestRemove' class='variant'><span id='CameraTestRemove.v' class='invisible'><code>CameraTestRemove(<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>)</code></span></span><div class='docblock'><p>Error removing camera test file.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.description' class="method"><span id='description.v' class='invisible'><code>fn <a href='#method.description' class='fnname'>description</a>(&amp;self) -&gt; &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a></code></span></h4>
+<div class='docblock'><p>A string describing the error kind.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html" title="trait core::fmt::Display">Display</a> for <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.fmt-1' class="method"><span id='fmt.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, fmt: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter. <a href="https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#tymethod.fmt">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;&amp;'a <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>&gt; for <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.from' class="method"><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(s: &amp;'a <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>&gt; for <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.from-1' class="method"><span id='from.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(s: <a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="struct" href="../../os_balloon/error/struct.Error.html" title="struct os_balloon::error::Error">Error</a>&gt; for <a class="enum" href="../../os_balloon/error/enum.ErrorKind.html" title="enum os_balloon::error::ErrorKind">ErrorKind</a></code></span><span class='out-of-band'></span></h3>
+<div class='impl-items'><h4 id='method.from-2' class="method"><span id='from.v-2' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(e: <a class="struct" href="../../os_balloon/error/struct.Error.html" title="struct os_balloon::error::Error">Error</a>) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "os_balloon";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
